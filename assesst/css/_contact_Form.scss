@@ -1,0 +1,57 @@
+@import"./functions";
+$size : 2em;
+
+.contact_Form{
+    width: 40%;
+    padding: 40px;
+    /*
+    background-color: #B31312;
+    border-radius: 10%;
+    */
+    h2{
+        font-size: 2em;
+        color:#B31312;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .inputBox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        input, textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 1.5em;
+            border: none;
+            border-bottom: 2px solid #B31312;
+            outline: none;
+            resize: none;
+        }
+        span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 1em;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s ease;
+            color: #666;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: #2B2A4C;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 1.2em;
+            transition: 0.5s ease;
+            &:hover{
+                background-color:#242172;
+                color: #EA906C;
+                font-size: increse($size);
+                transform:scaleY(1.2);
+            }
+        }
+    }
+}
