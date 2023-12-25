@@ -9,6 +9,28 @@ $primaryPeachColor : rgb(234, 144, 108);
     align-items: center;
 }
 
+/*-----Dark Mood----*/
+#Dark_Mood_icon {
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  :root{
+    --primary-color:#ecedf0; /* backgroung */
+    --secondary-color:#2B2A4C; /* head color */
+    --third-color:#EA906C; /* text color */
+    --forth-color:#EEE2DE; /* hreader text color */
+
+  }
+
+  .dark_Mode{
+    --primary-color:black; /* backgroung */
+    --secondary-color:#B31312; /* head color */
+    --third-color:#EA906C; /* text color */
+    --forth-color:#EEE2DE; /* hreader text color */
+  }
+  
+  /*-----Dark Mood----*/
 
 .contant-Us{
     .title{
@@ -68,7 +90,7 @@ $primaryPeachColor : rgb(234, 144, 108);
     scroll-behavior: smooth;
 }
 header{
-    background-color: #2B2A4C;
+    background-color: var(--secondary-color);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -80,7 +102,7 @@ header{
 
 .logo{
     text-decoration: none;
-    color: #EEE2DE;
+    color: var(--forth-color);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;/* using em to resizing the fount*/
@@ -89,15 +111,15 @@ header{
 .navigation a{
     display:inline-block;
     text-decoration: none;
-    color: #EEE2DE;
+    color: var(--forth-color);
     font-size: 1.1em;
     padding-left: 30px;
     transition: 0.7s ease;
 }
 
 .navigation a:hover{
-    color: #EA906C;
-    text-shadow:2px 2px 5px #EEE2DE ;
+    color:var(--third-color);
+    text-shadow:2px 2px 5px var(--forth-color) ;
     transform: scale(1.1);
 }
 
@@ -110,7 +132,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #ecedf0;
+    background-color: var(--primary-color);
     /*
     background: url(/assesst/img/mainSecPic.jpg) no-repeat;
     background-size: cover;
@@ -119,7 +141,7 @@ section{
 }
 
 .main h2{
-    color: #2B2A4C;
+    color: var(--secondary-color);
     font-size:1.4em;
     font-weight: 500;
 }
@@ -127,19 +149,21 @@ section{
 .main h2 span{
     display:inline-block;
     margin-top: 20px;
-    color: #EA906C;
+    color:var(--third-color);
     font-size: 3em;
     font-weight: 600;
 }
 
 .main h3{
-    color:#2B2A4C;
+    color:var(--secondary-color);
     font-size: 1.5em;
     font-weight: 700;
     letter-spacing: 1px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+/*  Header */
 
 .About_Me{
     width: 100%;
